@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+
+    
+       
+    <link rel="stylesheet" href="style.css">
+    
+        
+        
+</head>
+
+    
+<body>
+      
+    <div class="container">
+
+        <h1>Library Management System</h1>
+        <div id="authContainer">
+             <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username" required><br>
+            <input type="password" id="password" placeholder="Password" required><br>
+            <button onclick="authenticateUser()">Login</button>
+        </div>
+        <div id="content" style="display: none;">
+            <div class="options">
+                <button onclick="showAddBookForm()">Add Book</button>  
+                <button onclick="showBookList()">Book List</button>
+                <button onclick="showIssueBookForm()">Issue Book</button>
+                <button onclick="showReturnBookForm()">Return Book</button>
+               <input type="text" id="searchInput" placeholder="Search by title or author...">  
+                <button onclick="searchBooks()">Search</button>
+                </div>
+                <button onclick="logout()">Logout</button>
+        
+            </div>
+            <div id="dynamicContent"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
